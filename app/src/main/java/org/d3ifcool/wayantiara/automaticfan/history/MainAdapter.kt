@@ -12,13 +12,19 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
 import org.d3ifcool.wayantiara.automaticfan.R
 
-class MainAdapter(var context: Context) : RecyclerView.Adapter<MainAdapter.MyViewHolder>() {
+class MainAdapter(var context: Context, private val handler: Handler) :
+    RecyclerView.Adapter<MainAdapter.MyViewHolder>() {
+
+    interface Handler {
+        fun check(isEmpty: Boolean)
+    }
 
     var historyList: List<History> = listOf()
     var historyListFiltered: List<History> = listOf()
 
     fun setHistoryList(context: Context, historyList: List<History>) {
         this.context = context
+        handler.check(historyList.isEmpty())
         if (historyList == null) {
             this.historyList = historyList
             this.historyListFiltered = historyList
@@ -81,7 +87,7 @@ class MainAdapter(var context: Context) : RecyclerView.Adapter<MainAdapter.MyVie
         }
     }
 
-    fun failedGetData(){
+    fun failedGetData() {
         val snackbar =
             Snackbar.make(
                 (context as Activity).findViewById(android.R.id.content),
@@ -95,7 +101,7 @@ class MainAdapter(var context: Context) : RecyclerView.Adapter<MainAdapter.MyVie
         snackbar.show()
     }
 
-    inner class MyViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView!!){
+    inner class MyViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView!!) {
 
         var status: TextView? = null
         var waktu: TextView? = null

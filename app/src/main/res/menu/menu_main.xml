@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- menu_main.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_pick_date_time"
+        android:icon="@drawable/baseline_calendar_month_24"
+        android:title="Pick Date"
+        app:showAsAction="always"/>
+
+</menu>
