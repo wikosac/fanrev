@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Automatic Fan</string>
+    <string name="title_daftar_perangkat">Daftar Perangkat Bluetooth</string>
+    <string name="hubungkan_bt">Hubungkan BT</string>
+    <string name="icon">icon</string>
+    <string name="message">%1$s diklik!</string>
+    <string name="koneksi_error">Koneksi Eror</string>
+    <string name="histori">Histori Kipas</string>
+    <string name="failed_load_data_api">Gagal Memuat Data!</string>
+    <string name="tidak_ada_data">Tidak ada Data!</string>
+    <string name="Ok">Ok</string>
+
+
+</resources>

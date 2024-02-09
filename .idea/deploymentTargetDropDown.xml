@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="deploymentTargetDropDown">
+    <value>
+      <entry key="MainActivityTest">
+        <State />
+      </entry>
+      <entry key="app">
+        <State />
+      </entry>
+      <entry key="testAutoSwitch()">
+        <State />
+      </entry>
+      <entry key="testBluetooth()">
+        <State />
+      </entry>
+      <entry key="testPageDisplayed()">
+        <State />
+      </entry>
+      <entry key="testPageHistoryDisplayed()">
+        <State />
+      </entry>
+    </value>
+  </component>
+</project>
