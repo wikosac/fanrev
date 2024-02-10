@@ -4,6 +4,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
+        android:id="@+id/action_graph"
+        android:icon="@drawable/baseline_auto_graph_24"
+        android:title="Graph"
+        app:showAsAction="always"/>
+
+    <item
         android:id="@+id/action_pick_date_time"
         android:icon="@drawable/baseline_calendar_month_24"
         android:title="Pick Date"
