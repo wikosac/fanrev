@@ -10,10 +10,31 @@
         android:id="@+id/lineChart"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_marginHorizontal="16dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5"
         tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/tv_jml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="90"
+        android:text="Jumlah Penggunaan"
+        app:layout_constraintBottom_toBottomOf="@+id/lineChart"
+        app:layout_constraintEnd_toStartOf="@+id/lineChart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lineChart" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hari"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/lineChart"
+        app:layout_constraintStart_toStartOf="@+id/lineChart"
+        app:layout_constraintTop_toBottomOf="@id/lineChart" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

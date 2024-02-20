@@ -85,6 +85,8 @@ class ChartActivity : AppCompatActivity() {
         lineChart.xAxis.granularity = 1f
         lineChart.xAxis.labelCount = weekdays.size
         lineChart.xAxis.isGranularityEnabled = true
+        lineChart.axisLeft.axisMinimum = 0f
+        lineChart.axisRight.axisMinimum = 0f
 
         lineChart.setTouchEnabled(true)
         lineChart.setPinchZoom(true)
